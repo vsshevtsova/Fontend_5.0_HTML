@@ -1,0 +1,43 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.main {
+  width: 66%;
+  padding: 32px 100px;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.p {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  line-height: 133%;
+}
+ol {
+  list-style-type: decimal;
+}
+ol,
+ul li {
+  margin-left: 24px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
