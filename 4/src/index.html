@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Верстка формы</title>
+  </head>
+  <body>
+    <main>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="input__text">
+          <span> Имя </span>
+          <input
+            tabindex="1"
+            type="text"
+            name="username"
+            placeholder="Имя"
+            value=""
+          />
+        </div>
+        <div class="input__pass">
+          <span> Пароль </span>
+          <input
+            tabindex="2"
+            type="password"
+            name="userpass"
+            placeholder="Введите пароль"
+          />
+        </div>
+        <div class="input__tel">
+          <span> Телефон </span>
+          <input tabindex="3" type="tel" placeholder="Введите номер" />
+        </div>
+        <div class="input__radio">
+          <span> Пол </span>
+          <div>
+            <input tabindex="4" checked type="radio" name="sex" value="male" />
+            <label for="male">Мужской</label>
+          </div>
+          <div>
+            <input tabindex="4" type="radio" name="sex" value="female" />
+            <label for="female">Женский</label>
+          </div>
+        </div>
+        <div class="input__checkbox">
+          <span>Имущество</span>
+          <div>
+            <input
+              tabindex="5"
+              checked
+              type="checkbox"
+              name="bike"
+              value="yes"
+            />
+            <label for="bike">Велик</label>
+          </div>
+          <div>
+            <input tabindex="6" type="checkbox" name="car" value="yes" />
+            <label for="car">Машина</label>
+          </div>
+          <div>
+            <input
+              tabindex="7"
+              disabled
+              type="checkbox"
+              name="house"
+              value="yes"
+            />
+            <label for="house">Дом</label>
+          </div>
+        </div>
+        <div class="input__textarea">
+          <span>Дополнительная информация</span>
+          <textarea
+            tabindex="8"
+            name="additional-info"
+            cols="25"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="input__file">
+          <span>Прикрепить фото</span>
+          <input tabindex="9" type="file" name="userphoto" />
+        </div>
+        <div class="input__select">
+          <span>Любимый цвет</span>
+          <select tabindex="10" name="color">
+            <option value="red">Красный</option>
+            <option selected value="green">Зеленый</option>
+            <option value="blue">Голубой</option>
+          </select>
+        </div>
+        <div class="btn__action">
+          <span>Действия</span>
+          <button tabindex="11" type="submit">Отправить</button>
+          <button tabindex="12" type="reset">Очистить</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
